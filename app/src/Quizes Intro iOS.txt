@@ -1,0 +1,41 @@
+------ Quiz 1 ------
+
+Question 1
+SwiftUI can be used to develop apps for __all ios devices__ device(s)
+
+Question 2
+Swift UI can be used to create app's __interface and behavior__
+
+Question 3
+Which of the following views can be used to display read-only text on the UI? __Text()__
+
+Question 4
+Which of the following views can be used to display editable text on the UI? __TextField()__
+
+------ Quiz 2 ------
+
+Question 1
+HStack and VStack conforms to View protocol; but ZStack doesn't. __False__
+
+Question 2
+While using VStack and HStack for layout organization, alignment and spacing modifiers are mandatory to be used for them. __False__
+
+Question 3
+__Spacer()__ expand to fill any available space and push content apart from other views or the edges of the stack.
+
+Question 4
+Find the URL for Apple's documentation page for Human Interface Guideline for designing on iOS platform and put it as your answer. __https://developer.apple.com/design/human-interface-guidelines/platforms/designing-for-ios__
+
+------ Quiz 3 ------
+
+Question 1
+Which of the following could be an appropriate place to display title for iOS app? __NavigationView__
+
+Question 2
+Which of the following is the appropriate way to share the data across all the screens in the app? __environmentObject__
+
+Question 3
+Which of the following is the appropriate way to send the data from one screen to another provided that you don't need to access that data in any other screen of the app? __ObservedObject__
+
+Question 4
+You can send data between screens using NavigationLink. __True__
