@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".ui.FavoriteRecipeDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_fav_recipe_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Favorite Recipes"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_fav_recipe_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Name:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_fav_recipe_name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fav_recipe_label" />
+
+    <TextView
+        android:id="@+id/tv_fav_recipe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strawberry Milkshake"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_fav_recipe_name_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_fav_recipe_name_label"
+        app:layout_constraintTop_toTopOf="@+id/tv_fav_recipe_name_label" />
+
+    <TextView
+        android:id="@+id/tv_fav_recipe_cuisine_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Cuisine:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_fav_recipe_cuisine"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fav_recipe_name_label" />
+
+    <TextView
+        android:id="@+id/tv_fav_recipe_cuisine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dessert"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_fav_recipe_cuisine_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_fav_recipe_cuisine_label"
+        app:layout_constraintTop_toTopOf="@+id/tv_fav_recipe_cuisine_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_fav_recipe_instructions_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Instructions"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fav_recipe_cuisine_label" />
+
+    <TextView
+        android:id="@+id/tv_fav_recipe_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Instructions go here"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_fav_recipe_instructions_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_fav_recipe_instructions_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fav_recipe_instructions_label" />
+
+    <TextView
+        android:id="@+id/tv_fav_recipe_ingredients_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Ingredients"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fav_recipe_instructions" />
+
+    <TextView
+        android:id="@+id/tv_fav_recipe_ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ingredients go here"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fav_recipe_ingredients_label" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_instructions2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toEndOf="@+id/tv_fav_recipe_instructions_label"
+        app:layout_constraintTop_toTopOf="@+id/tv_fav_recipe_instructions_label" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_ingredients"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toEndOf="@+id/tv_fav_recipe_ingredients_label"
+        app:layout_constraintTop_toTopOf="@+id/tv_fav_recipe_ingredients_label" />
+
+    <Button
+        android:id="@+id/btn_update_recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Update Recipe"
+        app:layout_constraintEnd_toStartOf="@+id/btn_delete_recipe"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fav_recipe_ingredients" />
+
+    <Button
+        android:id="@+id/btn_delete_recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Recipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_update_recipe"
+        app:layout_constraintTop_toTopOf="@+id/btn_update_recipe" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
